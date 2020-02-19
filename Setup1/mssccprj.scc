@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Setup1.vdproj]
+SCC_Aux_Path = "\\infopower.local\VSS Databases\AMS"
+SCC_Project_Name = "$/AMS/AbacusInterface/PROD/Setup1", MXTSAAAA

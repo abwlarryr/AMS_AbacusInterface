@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ErrorEmailContactList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">larryr@abw.com; amy.williams@americanmessaging.net; zerrialb@abw.com ; 2147071687@txt.att.net ; dale@abw.com ; larryr@abw.com</Value>
+    </Setting>
+    <Setting Name="DevConnString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DevMsg;Initial Catalog=IPIMSGSVR;Integrated Security=True;Network Library=dbmssocn&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DevMsg;Initial Catalog=IPIMSGSVR;Integrated Security=True;Network Library=dbmssocn</Value>
+    </Setting>
+    <Setting Name="CureatrAlertTEST" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://10.200.2.70/testcxml.tbred?xmlrequest=METHOD+WIMCRFWD+{
+  "ams-id": "cureatr-webhook-20161028_151803-5838-242618",
+  "date": "2016-10-28 15:18:03 CDT",
+  "remote-addr": "173.193.106.242",
+  "cureatr-inbound": {
+    "event": "user_status",
+    "time_status": "2015-04-07T05:46:17.510801",
+    "user_id": "55236f2951c356c8d0e5901a",
+    "status": "available",
+    "message": "away from my stethoscope",
+    "user_pager": "2142250199",
+    "covering_user_id": "55236f2951c356c8d0e5901a",
+    "covering_user_pager": "2142250026"
+  }
+}</Value>
+    </Setting>
+    <Setting Name="CureatrAlertPROD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://10.200.2.20/cxml.tbred?xmlrequest=METHOD+WIMCRFWD+{
+  "ams-id": "cureatr-webhook-20170308_151803-5838-242618",
+  "date": "2017-03-08 15:18:03 CDT",
+  "remote-addr": "173.193.106.242",
+  "cureatr-inbound": {
+"status": "available", "user_id": "55c113d2297b5057a4c763e0", "user_pager": "8174320014", "time_status": "2017-03-08T23:18:27.488000", "message": "In surgery", "event": "user_status"
+  }
+}
+</Value>
+    </Setting>
+    <Setting Name="CureatrAlertInvalid" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://10.200.2.70/testcxml.tbred?xmlrequest=METHOD+WIMCRFWD+{
+  "ams-id": "cureatr-webhook-20161028_151803-5838-242618",
+  "date": "2016-10-28 15:18:03 CDT",
+  "remote-addr": "173.193.106.242",
+  "cureatr-inbound": {
+    "event": "user_status",
+    "time_status": "2015-04-07T05:46:17.510801",
+    "user_id": "55236f2951c356c8d0e5901a",
+    "status": null,
+    "message": "away from my stethoscope",
+    "user_pager": "2142250020",
+    "covering_user_id": "55236f2951c356c8d0e5901a",
+    "covering_user_pager": "2142250026"
+  }
+}
+</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
